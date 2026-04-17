@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/font/Roboto-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/font/Roboto_Condensed-Light.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/font/Roboto-SemiBold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/font/Roboto-Bold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/font/Roboto-Black.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url(./assets/font/digital.TTF);
+}
+
+@font-face {
+    font-family: 'Neon Light';
+    src: url(./assets/font/NeonLight-Regular.ttf);
+}
+
+:root {
+    --border-color: white;
+    --shadow-color: white;
+    --clock-text: red;
+}
+
+body {
+    width: 50%;
+    margin: auto;
+    background: linear-gradient(to right,rgb(25, 0, 0), rgb(75, 0, 0), rgb(25, 0, 0));
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-family: 'Neon Light';
+    text-transform: uppercase;
+    color: #ffec40;
+    text-shadow: 0.05rem 0.05rem 0.5rem #ffec40;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Roboto';
+    color: white;
+}
+
+img {
+    width: 15rem;
+    border: 0.125rem solid;
+    border-color: var(--border-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0 2rem 0;
+    flex-wrap: wrap;
+}
+
+.movie-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.125rem solid;
+    margin-bottom: 1rem;
+    border-color: var(--border-color);
+    box-shadow: 0.05rem 0.05rem 0.5rem var(--shadow-color);
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 4rem;
+}
+
+.clock {
+    background: black;
+    color: var(--clock-text);
+    margin: auto;
+    font-size: 2rem;
+    padding: 0.5rem 0 0.5rem 0;
+    width: 15rem;
+    font-family: 'Digital';
+    font-size: 2.75rem;
+    text-shadow: 0.05rem 0.05rem 0.5rem var(--clock-text);
+    border: 0.125rem solid;
+    border-color: var(--border-color);
+}
